@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "https://SUBSTITUA-PELA-URL-DA-API.onrender.com/api"
+  apiUrl: "https://m7-a8-livros-api-qrhk.onrender.com/api"
 };
