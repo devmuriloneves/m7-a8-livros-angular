@@ -1,0 +1,20 @@
+.container {
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.botao {
+  background: #1a56db;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}

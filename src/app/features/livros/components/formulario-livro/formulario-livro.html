@@ -1,0 +1,37 @@
+<form class="formulario" (submit)="enviarFormulario($event)">
+  <label>
+    Título *
+    <input type="text" name="titulo" [(ngModel)]="titulo" required />
+  </label>
+
+  <label>
+    Autor *
+    <input type="text" name="autor" [(ngModel)]="autor" required />
+  </label>
+
+  <label>
+    Categoria *
+    <input type="text" name="categoria" [(ngModel)]="categoria" required />
+  </label>
+
+  <label>
+    Ano *
+    <input type="number" name="ano" [(ngModel)]="ano" required />
+  </label>
+
+  <label>
+    Status
+    <select name="status" [(ngModel)]="status">
+      <option value="disponivel">Disponível</option>
+      <option value="emprestado">Emprestado</option>
+      <option value="indisponivel">Indisponível</option>
+    </select>
+  </label>
+
+  <label>
+    Descrição
+    <textarea name="descricao" [(ngModel)]="descricao" rows="4"></textarea>
+  </label>
+
+  <button type="submit">Cadastrar livro</button>
+</form>

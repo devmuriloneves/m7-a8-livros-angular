@@ -1,0 +1,41 @@
+.container {
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.autor {
+  color: #555;
+}
+
+.erro {
+  color: #b3261e;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.acoes button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.acoes button.excluir {
+  border-color: #b3261e;
+  color: #b3261e;
+}
+
+.acoes button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

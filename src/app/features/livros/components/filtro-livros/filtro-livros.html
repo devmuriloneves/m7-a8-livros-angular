@@ -1,0 +1,18 @@
+<section class="filtros">
+  <input
+    type="search"
+    placeholder="Pesquisar por título ou autor"
+    [value]="pesquisa()"
+    (input)="alterarPesquisa($event)"
+  />
+
+  <select
+    [value]="status()"
+    (change)="alterarStatus($event)"
+  >
+    <option value="todos">Todos os status</option>
+    <option value="disponivel">Disponível</option>
+    <option value="emprestado">Emprestado</option>
+    <option value="indisponivel">Indisponível</option>
+  </select>
+</section>

@@ -1,0 +1,13 @@
+<main class="container">
+  <a routerLink="/livros">
+    ← Voltar para livros
+  </a>
+
+  <h1>Cadastrar livro</h1>
+
+  @if (erro(); as mensagemErro) {
+    <p class="erro">{{ mensagemErro }}</p>
+  }
+
+  <app-formulario-livro (salvar)="cadastrar($event)" />
+</main>
